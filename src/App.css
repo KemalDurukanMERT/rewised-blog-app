@@ -5,6 +5,7 @@
   margin-left: 240px;
   margin-top: 80px;
   background-color: white;
+  min-width: 415px;
 }
 
 @media (max-width: 991.98px) {

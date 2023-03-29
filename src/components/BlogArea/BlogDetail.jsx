@@ -9,7 +9,7 @@ const BlogDetail = () => {
   const dispatch = useDispatch();
   const handleDelete = () => {
     let renew = blogs.filter(
-      (blog) => blog.id !== window.location.pathname.slice(7)
+      (blog) => blog.id !== Number(window.location.pathname.slice(7))
     );
     dispatch(renewBlogs(renew));
   };
