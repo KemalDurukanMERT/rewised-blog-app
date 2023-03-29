@@ -32,10 +32,6 @@ const Image = ({ attributes, children, element }) => {
 
       Transforms.setNodes(
         editor,
-        {
-          anchor: { path: [0, 0], offset: 0 },
-          focus: { path: [0, 0], offset: 0 },
-        },
         { caption: captionInput },
         { at: imageNodeEntry[1] }
       );

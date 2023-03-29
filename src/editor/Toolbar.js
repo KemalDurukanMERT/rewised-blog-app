@@ -35,6 +35,7 @@ export default function Toolbar({ selection, previousSelection }) {
   const onImageSelected = useImageUploadHandler(editor, previousSelection);
 
   const blockType = getTextBlockStyle(editor);
+  console.log(blockType)
 
   return (
     <div className="toolbar">

@@ -49,10 +49,6 @@ export function toggleBlockType(editor, blockType) {
   const changeTo = currentBlockType === blockType ? "paragraph" : blockType;
   Transforms.setNodes(
     editor,
-    {
-      anchor: { path: [0, 0], offset: 0 },
-      focus: { path: [0, 0], offset: 0 },
-    },
     { type: changeTo },
     { at: editor.selection, match: (n) => Editor.isBlock(editor, n) }
   );
