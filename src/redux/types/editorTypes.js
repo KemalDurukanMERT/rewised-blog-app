@@ -1,0 +1,1 @@
+export const SET_EDITOR = "SET_EDITOR";

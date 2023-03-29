@@ -1,0 +1,71 @@
+.dashboard,
+.login,
+.blogs,
+.blog-detail-container {
+  margin-left: 240px;
+  margin-top: 80px;
+  background-color: white;
+}
+
+@media (max-width: 991.98px) {
+  .dashboard,
+  .login,
+  .blogs,
+  .blog-detail-container {
+    margin-left: 0;
+  }
+}
+
+
+.input-group {
+  min-width: 50%;
+  width: fit-content;
+  position: relative;
+ }
+ 
+ .inputx {
+  width: 100%;
+  background: rgb(248, 171, 182);
+  padding: 1rem;
+  color: white;
+  border: 5px solid rgb(197, 37, 37);
+  transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+ }
+ 
+ .user-label {
+  position: absolute;
+  left: 15px;
+  color: black;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.4,0,0.2,1);
+  font-style: italic;
+  font-size: 1.2rem;
+ }
+ 
+ .inputx:focus {
+  outline: none;
+  border: 5px solid rgb(120, 67, 161);
+ }
+ 
+ .inputx:focus ~ label{
+  transform: translateY(-50%) scale(0.8);
+  background-color: rgb(120, 67, 161);
+  border-radius: 1rem;
+  padding: 0.4rem 1rem;
+  color: white;
+ }
+
+ .former{
+  width: 80%;
+  padding: 3rem;
+  background-color: wheat;
+ }
+
+ .former-inner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+ }
