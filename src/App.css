@@ -15,6 +15,24 @@
     margin-left: 0;
   }
 }
+@media (max-width: 415px) {
+  .dashboard,
+  .login,
+  .blogs,
+  .blog-detail-container {
+    margin-top: 140px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 300px) {
+  .dashboard,
+  .login,
+  .blogs,
+  .blog-detail-container {
+    margin-top: 170px;
+    margin-left: 0;
+  }
+}
 
 
 .input-group {
