@@ -27,33 +27,38 @@
   width: 100%;
   background: rgb(248, 171, 182);
   padding: 1rem;
-  color: white;
+  padding-left: 2rem;
+  color: black;
   border: 5px solid rgb(197, 37, 37);
   transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+  outline: none;
+  font-weight: bolder;
+  font-style: italic;
  }
  
  .user-label {
   position: absolute;
   left: 15px;
-  color: black;
+  color: white;
   pointer-events: none;
   transform: translateY(1rem);
   transition: 150ms cubic-bezier(0.4,0,0.2,1);
   font-style: italic;
   font-size: 1.2rem;
+  transform: translateY(-50%) scale(0.8);
+  background-color: rgb(197, 37, 37);
+  border-radius: 1rem;
+  padding: 0.4rem 1rem;
+  /* color: white; */
  }
  
  .inputx:focus {
-  outline: none;
+  
   border: 5px solid rgb(120, 67, 161);
  }
  
  .inputx:focus ~ label{
-  transform: translateY(-50%) scale(0.8);
   background-color: rgb(120, 67, 161);
-  border-radius: 1rem;
-  padding: 0.4rem 1rem;
-  color: white;
  }
 
  .former{

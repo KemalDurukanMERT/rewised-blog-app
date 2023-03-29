@@ -44,31 +44,34 @@ const Input = () => {
               required
               type="text"
               id="title"
+              placeholder="Enter the title of blog"
               onChange={(e) => setTitle(e.target.value)}
               className="inputx rounded-pill"
             />
-            <label className="user-label">Title</label>
+            <label className="user-label rounded-pill">Title</label>
           </div>
           <br />
           <div className="input-group">
             <input
+            placeholder="Enter the author name"
               required
               type="text"
               id="author"
               onChange={(e) => setAuthor(e.target.value)}
               className="inputx rounded-pill"
             />
-            <label className="user-label">Author</label>
+            <label className="user-label rounded-pill">Author</label>
           </div>
           <br />
           <div className="input-group">
             <input
               type="text"
+              placeholder="Enter the URL of cover image"
               id="image"
               onChange={(e) => setImage(e.target.value)}
               className="inputx rounded-pill"
             />
-            <label className="user-label">Image URL</label>
+            <label className="user-label rounded-pill">Image URL</label>
           </div>
           <br />
         </div>
