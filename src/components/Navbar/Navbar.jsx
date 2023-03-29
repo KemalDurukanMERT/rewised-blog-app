@@ -79,7 +79,7 @@ const Navbar = () => {
                 <i className="fas fa-bars" />
               </button>
               {/* Brand */}
-              <a className="navbar-brand rounded py-1" href="#">
+              <a className="navbar-brand rounded py-1" href="/">
                 <img src={logo} alt="" width={"200px"} />
               </a>
               {/* Right links */}
@@ -101,9 +101,8 @@ const Navbar = () => {
                 </li>
                 {/* Icon dropdown */}
                 <li className="nav-item dropdown">
-                  <a
+                  <div
                     className="nav-link me-3 me-lg-0 dropdown-toggle hidden-arrow"
-                    href="#"
                     id="navbarDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -111,18 +110,18 @@ const Navbar = () => {
                   >
                     {selectedLanguage}
                     {/* Language */}
-                  </a>
+                  </div>
                   <ul
                     className="dropdown-menu dropdown-menu-end"
                     aria-labelledby="navbarDropdown"
                   >
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <div className="dropdown-item">
                         <i className="flag-united-kingdom flag" />
                         {selectedLanguage}
                         {/* Language */}
                         <i className="fa fa-check text-success ms-2" />
-                      </a>
+                      </div>
                     </li>
                     <li>
                       <hr className="dropdown-divider" />
@@ -141,7 +140,7 @@ const Navbar = () => {
                 <li  className={ true ? "nav-item dropdown" : "d-none"}>
                   <a
                     className="nav-link dropdown-toggle hidden-arrow d-flex align-items-center"
-                    href="#"
+                    href="/"
                     id="navbarDropdownMenuLink"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -160,12 +159,12 @@ const Navbar = () => {
                     aria-labelledby="navbarDropdownMenuLink"
                   >
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="/">
                         My profile
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="/">
                         Settings
                       </a>
                     </li>

@@ -9,13 +9,13 @@ const BlogDetail = () => {
   const dispatch = useDispatch();
   const handleDelete = () => {
     let renew = blogs.filter(
-      (blog) => blog.id != window.location.pathname.slice(7)
+      (blog) => blog.id !== window.location.pathname.slice(7)
     );
     dispatch(renewBlogs(renew));
   };
   const { blogs } = useSelector((state) => state.markdownrdc);
   let blog = blogs.filter(
-    (blog) => blog.id == window.location.pathname.slice(7)
+    (blog) => blog.id === Number(window.location.pathname.slice(7))
   )[0];
   const [document, setDocument] = useState(blog.text);
 
