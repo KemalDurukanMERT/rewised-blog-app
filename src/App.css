@@ -1,6 +1,6 @@
 .dashboard,
 .login,
-.blogs,
+.newblog-main,
 .blog-detail-container {
   margin-left: 240px;
   margin-top: 80px;
@@ -8,18 +8,25 @@
   min-width: 415px;
 }
 
+.newblog-main{
+  max-width: calc(100% - 240px);
+}
+
 @media (max-width: 991.98px) {
   .dashboard,
   .login,
-  .blogs,
+  .newblog-main,
   .blog-detail-container {
     margin-left: 0;
+  }
+  .newblog-main{
+    max-width: 100%;
   }
 }
 @media (max-width: 415px) {
   .dashboard,
   .login,
-  .blogs,
+  .newblog-main,
   .blog-detail-container {
     margin-top: 140px;
     margin-left: 0;
@@ -28,7 +35,7 @@
 @media (max-width: 300px) {
   .dashboard,
   .login,
-  .blogs,
+  .newblog-main,
   .blog-detail-container {
     margin-top: 170px;
     margin-left: 0;

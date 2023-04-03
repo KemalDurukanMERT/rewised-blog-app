@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+
+.newblog-main {
+  margin-top: 150px;
+  width: 100%;
+
+  .blog-component {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .blog-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      column-gap: 3rem;
+
+      .header-left {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        max-width: 60%;
+        .header-pink {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 52px;
+          line-height: 63px;
+
+          color: #d05270;
+        }
+
+        .header-dark {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 52px;
+          line-height: 63px;
+
+          color: #424242;
+        }
+        .header-description {
+          margin-top: 1rem;
+          margin-bottom: 2rem;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+
+          color: #424242;
+        }
+
+        .header-search {
+          width: 545px;
+          height: 55px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          padding-left: 2rem;
+          background: #efefef;
+          border: 1px solid rgba(66, 66, 66, 0.11);
+          border-radius: 30px;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 24px;
+
+          color: #a1a1a1;
+          input {
+            height: 100%;
+            width: 100%;
+            padding-left: 1rem;
+            border-radius: 30px;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            margin-left: 0.5rem;
+            border: none;
+            background-color: transparent;
+          }
+        }
+      }
+      .header-right {
+        margin-right: 1.5rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .image-background {
+          position: absolute;
+          top: -10px;
+          z-index: -1;
+          width: 258.7px;
+          height: 408.65px;
+          background: linear-gradient(0deg, #d05270, #d05270), #3d62e5;
+          border-radius: 20px;
+          transform: rotate(-90deg);
+        }
+        .header-image {
+          width: 367px;
+          height: 407px;
+          background: url(../Assets/Saly-16.png);
+        }
+      }
+    }
+    @media screen and (max-width:1130px) {
+        .blog-header{
+            justify-content: center;
+
+            .header-left{
+                max-width: 80%;
+            }
+        }
+      }
+
+
+    .add-button {
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+      width: 351px;
+      height: 62px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 29px;
+      color: #ffffff;
+      background: linear-gradient(180deg, #4e47a6 0%, #cd4465 100%);
+      box-shadow: 4px 4px 4px 3px rgba(137, 0, 33, 0.56);
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+    .blogs {
+        width: 100%;
+      .blogs-main {
+        min-width: 100%;
+        .category-nav {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1rem;
+          margin-bottom: 5rem;
+          .ctg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-bottom: 0.5rem;
+            min-width: 85px;
+            height: 30px;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            cursor: pointer;
+          }
+
+          .ctg-selected {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+
+            color: #d05270;
+            border-bottom: 2px solid #d05270;
+          }
+        }
+        .blogs-area {
+          display: flex;
+          flex-wrap: wrap;
+          column-gap: 1rem;
+          row-gap: 4rem;
+          min-width: 100%;
+          .blog-card {
+            width: 590px;
+            height: 618px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+            .blog-card-image {
+              width: 590px;
+              height: 415.49px;
+            }
+            .blog-card-date {
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 17px;
+            }
+            .blog-card-title {
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 24px;
+              line-height: 29px;
+
+              color: #d05270;
+            }
+            .blog-card-description {
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 20px;
+            }
+            .blog-card-button {
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 22px;
+              padding: 0.2rem;
+              width: fit-content;
+              color: #d05270;
+              border-bottom: 1px solid #D05270;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
